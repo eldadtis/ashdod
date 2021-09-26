@@ -1,0 +1,101 @@
+html,
+body {
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+}
+
+.cont_fluid {
+    width: 100%;
+}
+
+.cont {
+    width: 992px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.desk{display:block;}
+.mob{display:none;}
+
+.rel{position:relative;}
+
+.header_outer{margin-bottom:150px;height:610px;background-size: auto 100%;background-image: url('../assets/img/wider_bg.png');background-repeat: repeat-x;background-position: 0 0;}
+.header_img{position:absolute;top:0;left: -250px;height:calc(100% + 122px);}
+.header_img img{width: auto;height:100%;}
+
+.header_text{position:absolute;top:0;right: -100px;z-index:9999;text-align: center;width:700px;text-shadow: 0px 3px 6px rgba(0,0,0,0.16);color:white;
+    display: flex;flex-direction:column;height:730px;justify-content: space-between;height: 600px; padding: 40px 0;}
+.header_text .semi_up{font-size:30px;font-weight:500;}
+.header_text .main h1{font-size: 70px; line-height: 70px;}
+.header_text .text{font-size: 18px;}
+
+.ashdod_form{width:650px;max-width:100%;margin:0 auto;padding:30px;background-color: #A06CD5;
+    color:white;margin-bottom:100px;-webkit-box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16); 
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.16);}
+.ashdod_form_title{text-align: center;}
+.ashdod_form_title h2{font-size:40px;text-shadow: 0px 3px 6px rgba(0,0,0,0.16);}
+.ashdod_form_inputs{display:flex;flex-wrap: wrap;}
+.ashdod_input{width:calc((100% / 2) - 8px);display:inline-block;padding:8px 0;}
+.ashdod_input input{width:100%;height:45px;padding:5px 15px;outline: none;border:1px solid black;}
+.ashdod_input.lefty{margin-right:16px;}
+.input_datetime input, .input_datetime:hover input{cursor:pointer;}
+
+.ashdod_submit{width:100%;text-align: center;padding-top:15px;}
+a.ashdod_submit_button{display:inline-block;color:white;background-color:#422B64;font-size:20px;padding:10px 50px;text-decoration: none;}
+
+.seperator{height:1px;width:100%;border:1px solid #A06CD5;margin-bottom:50px;}
+.bottom_logos{text-align:center;margin-bottom:20px;}
+.bottom_logos img{display:inline-block;max-width: 80%;height:auto;}
+
+.credits{background-color: #422B64;padding:15px 0;text-align:center;color:white;font-weight:500;font-size:18px;line-height:18px;}
+.credit{display:inline-block;padding:0 15px;}
+.credit.right{border-left:2px solid white;}
+
+@media (max-width: 1366px) {
+    .cont {
+        width: 768px;
+    }
+    .header_outer{margin-bottom:150px;height:500px;}
+    .header_img{position:absolute;top:0;left: -250px;height:calc(100% + 100px);}
+    .header_text{height:500px;right:-145px;}
+    .header_text .semi_up{font-size:26px;}
+    .header_text .main h1{font-size: 50px; line-height: 50px;}
+    .header_text .text{font-size: 17px;}
+    
+}
+
+@media (max-width: 992px) {
+    .cont {
+        width: 100%;
+    }
+    .desk{display:none;}
+    .mob{display:block;}
+
+    .header_outer_mob{width:100%;background-image: url('../assets/img/wider_bg_mob.png');
+        background-size:auto 100%;background-repeat: repeat-x;background-position: 0 0;
+        text-align: center;margin-bottom:30px;}
+    .header_outer_mob img{max-width:100%;}
+    .header_text_mob{width:500px;max-width:100%;padding:15px;
+        text-align: center;margin: 0 auto;color:#422B64;}
+    .header_text_mob .semi_up{font-size:50px;font-weight:600;text-shadow: 0px 3px 6px rgba(0,0,0,0.16);}
+    .header_text_mob .main h1{font-size: 30px; line-height: 30px;text-shadow: 0px 3px 6px rgba(0,0,0,0.16);}
+    .header_text_mob .text{font-size: 18px;}
+    .header_text_mob .header_arrow_down{margin:15px 0;}
+    .seperator{width: 650px;max-width: 90%; margin: 0 auto;}
+    .bottom_logos{margin-bottom:50px;}
+}
+
+@media (max-width: 768px) {
+    .ashdod_form{padding: 10px 12px;}
+    .main_form{padding:0 15px;}
+    .ashdod_form_title{padding:20px;}
+    .ashdod_input{width:100%;padding:10px 0;}
+    .ashdod_form_title h2{font-size:29px;}
+    .ashdod_input input{height:50px;}
+    .ashdod_input.lefty{margin:0;}
+    .ashdod_submit{padding-bottom:15px;}
+
+    .credits{padding-bottom:50px;}
+    .credit{display:block;padding:15px 0px;}
+    .credit.right{border:0;}
+}
